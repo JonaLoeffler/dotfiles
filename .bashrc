@@ -99,6 +99,9 @@ alias ..="cd .."
 alias open="xdg-open"
 alias o=open
 
+alias weather="curl wttr.in/koblenz"
+alias wtr=weather
+
 xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
