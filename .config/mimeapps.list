@@ -1,6 +1,6 @@
 [Default Applications]
-x-scheme-handler/http=userapp-Firefox.desktop
-x-scheme-handler/https=userapp-Firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
 x-scheme-handler/ftp=userapp-Firefox.desktop
 x-scheme-handler/chrome=userapp-Firefox.desktop
 text/html=userapp-Firefox.desktop
@@ -17,10 +17,13 @@ x-scheme-handler/mailto=userapp-Thunderbird.desktop
 message/rfc822=userapp-Thunderbird.desktop
 application/pdf=epdfview.desktop
 application/x-bittorrent=deluge.desktop
+x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/gitkraken=GitKraken.desktop
+x-scheme-handler/msteams=teams.desktop
 
 [Added Associations]
 x-scheme-handler/http=userapp-Firefox.desktop;
-x-scheme-handler/https=userapp-Firefox.desktop;
+x-scheme-handler/https=userapp-Firefox.desktop;firefox.desktop;
 x-scheme-handler/ftp=userapp-Firefox.desktop;
 x-scheme-handler/chrome=userapp-Firefox.desktop;
 text/html=userapp-Firefox.desktop;
