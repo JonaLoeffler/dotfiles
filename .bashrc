@@ -98,6 +98,8 @@ alias more=less
 alias ..="cd .."
 alias open="xdg-open"
 alias o=open
+alias c=clear
+alias cls=clear
 
 alias weather="curl wttr.in/koblenz"
 alias wtr=weather
