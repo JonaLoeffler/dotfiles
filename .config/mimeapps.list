@@ -44,3 +44,4 @@ application/x-bittorrent=deluge.desktop;
 application/octet-stream=mousepad.desktop;
 text/calendar=thunderbird.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;mousepad.desktop;
+application/rss+xml=thunderbird.desktop;userapp-Thunderbird.desktop;

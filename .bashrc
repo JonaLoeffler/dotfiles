@@ -104,6 +104,9 @@ alias cls=clear
 alias weather="curl wttr.in/koblenz"
 alias wtr=weather
 
+alias dup="urxvt &\n"
+alias feierabend="blurlock && onedrive --synchronize && shutdown now"
+
 xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
