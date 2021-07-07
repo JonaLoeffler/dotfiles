@@ -70,8 +70,8 @@ bindsym $mod+Ctrl+m exec pavucontrol
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec pcmanfm
-bindsym $mod+F4 exec firefox https://onedrive.live.com/?id=133118C47CE5ABC6%21155076&cid=133118C47CE5ABC6
-bindsym $mod+F5 exec firefox https://onedrive.live.com/redir?resid=133118C47CE5ABC6%2165909&page=Edit&wd=target%28Sonstiges.one%7C7317f57b-7ab1-4b0b-8711-46abab9e8216%2FErledigt%20WiSE%202021%7Cdc2e68b8-3744-428e-8393-375faa010b9c%2F%29
+bindsym $mod+F4 exec firefox https://onedrive.live.com/?id=root&cid=133118C47CE5ABC6
+bindsym $mod+F5 exec firefox https://onedrive.live.com/redir?resid=133118C47CE5ABC6!65909
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b --experimental-backends
@@ -398,7 +398,7 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 14
+gaps inner 15
 gaps outer -2
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
