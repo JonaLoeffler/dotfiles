@@ -60,10 +60,10 @@ Xcursor.size:                     0
 
 ! URxvt.font:                       9x15,xft:TerminessTTFNerdFontMono
 
-URxvt.font:             xft:inconsolata:pixelsize=30:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=30:antialias=true,hinting=true
-URxvt.boldFont:         xft:inconsolata:pixelsize=30:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=30:antialias=true,hinting=true
-URxvt.italicFont:       xft:inconsolata:pixelsize=30:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=30:antialias=true,hinting=true
-URxvt.bolditalicFont:   xft:inconsolata:pixelsize=30:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=30:antialias=true,hinting=true
+URxvt.font:             xft:inconsolata:pixelsize=28:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=28:antialias=true,hinting=true
+URxvt.boldFont:         xft:inconsolata:pixelsize=28:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=28:antialias=true,hinting=true
+URxvt.italicFont:       xft:inconsolata:pixelsize=28:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=28:antialias=true,hinting=true
+URxvt.bolditalicFont:   xft:inconsolata:pixelsize=28:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=28:antialias=true,hinting=true
 
 
 ! alternative font settings with 'terminus':
@@ -180,7 +180,7 @@ URxvt.keysym.Shift-Control-Down:  \033[1;6B
 ! URxvt*override-redirect:          boolean
 ! URxvt*hold:                       boolean
 ! URxvt*externalBorder:             number
-! URxvt*internalBorder:             number
+URxvt*internalBorder: 15
 ! URxvt*borderLess:                 true
 ! URxvt*lineSpace:                  number
 ! URxvt*letterSpace:                number

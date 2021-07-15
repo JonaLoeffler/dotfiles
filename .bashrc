@@ -104,6 +104,8 @@ alias cls=clear
 alias weather="curl wttr.in/koblenz"
 alias wtr=weather
 
+alias octave="octave-cli -q"
+
 alias dup="urxvt &\n"
 alias feierabend="blurlock && onedrive --synchronize && shutdown now"
 
