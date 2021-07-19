@@ -1,0 +1,2 @@
+skip_dir = "*.git"
+skip_file = "*.mp4"
