@@ -1,2 +1,3 @@
 skip_dir = "*.git"
 skip_file = "*.mp4"
+skip_dotfiles = "true"
