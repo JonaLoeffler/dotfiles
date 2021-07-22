@@ -53,8 +53,8 @@ font-1 = unifont:fontformat=truetype:size=10:antialias=false;0
 font-2 = siji:pixelsize=15;1
 
 modules-left = i3
-modules-center = date
-modules-right = pulseaudio battery
+modules-center =
+modules-right = date pulseaudio battery
 
 tray-position = right
 tray-padding = 2
@@ -235,22 +235,27 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date = %d.%m.%Y
+date = "%d.%m.%Y"
+date-alt = ""
 
-time = "%H:%M KW%W"
+time = "%H:%M KW%V"
+time-alt = ""
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #0a6cf5
+format-underline =
 
 label = %date% %time%
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> <bar-volume>
+format-volume = <label-volume>
 label-volume = VOL %percentage%%
 label-volume-foreground = ${root.foreground}
+
+format-volume-underline = #88bbb5
+format-muted-underline = #70807e
 
 label-muted = 🔇 muted
 label-muted-foreground = #666
