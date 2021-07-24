@@ -17,19 +17,19 @@
 ;==========================================================
 
 [colors]
-background = ${xrdb:color0:#222}
-background-alt = ${xrdb:color8:#585858}
-foreground = ${xrdb:color7:#222}
-foreground-alt = ${xrdb:color15:#f8f8f8}
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
+background = ${xrdb:color0}
+background-alt = ${xrdb:color8}
+foreground = ${xrdb:color7}
+foreground-alt = ${xrdb:color15}
+primary = ${xrdb:color6}
+secondary = ${xrdb:color3}
+alert = ${xrdb:color1}
 
 [bar/bottom]
 monitor = ${env:MONITOR:eDP1}
 bottom = true
 width = 100%
-height = 35
+height = 42
 radius = 0.0
 fixed-center = true
 
@@ -49,19 +49,15 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=15;1
-font-1 = unifont:fontformat=truetype:size=10:antialias=false;0
-font-2 = siji:pixelsize=15;1
+font-0 = fixed:pixelsize=15:antialias=true;2
 
 modules-left = i3
-modules-center =
-modules-right = date pulseaudio battery
+modules-center = xwindow
+modules-right = cpu memory pulseaudio battery date
 
 tray-position = ${env:TRAY_POS:right}
 tray-padding = 1
-;tray-background = #0063ff
 
-;wm-restack = bspwm
 wm-restack = i3
 
 ;override-redirect = true
@@ -69,11 +65,11 @@ wm-restack = i3
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
 
-;scroll-up = #i3.next
-;scroll-down = #i3.prev
+scroll-up = #i3.next
+scroll-down = #i3.prev
 
 cursor-click = pointer
-cursor-scroll = ns-resize
+cursor-scroll = pointer
 
 [module/xwindow]
 type = internal/xwindow
@@ -121,7 +117,7 @@ label-mode-background = ${colors.primary}
 ; focused = Active workspace on focused monitor
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
-label-focused-underline= #88bbb5
+label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
