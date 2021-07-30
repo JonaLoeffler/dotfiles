@@ -50,9 +50,8 @@ module-margin-left = 2
 module-margin-right = 2
 
 font-0 = fixed:pixelsize=15:antialias=true;2
-font-1 = FontAwesome5Free:style=Regular:size=12;2
-font-2 = FontAwesome5Free:style=Solid:size=12;2
-font-3 = FontAwesome5Brands:style=Regular:size=12;2
+font-1 = FontAwesome5Free:style=Solid:size=12;2
+font-2 = FontAwesome5Brands:style=Regular:size=12;2
 
 modules-left = i3
 modules-center = cpu memory filesystem battery wlan eth uptime
@@ -123,7 +122,7 @@ label-mode-background = ${colors.primary}
 
 ; Icons
 ws-icon-0 = 1;
-ws-icon-1 = 2;
+ws-icon-1 = 2;
 ws-icon-2 = 3;
 ws-icon-3 = 4;
 ws-icon-4 = 5;
