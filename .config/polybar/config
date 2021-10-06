@@ -54,7 +54,7 @@ font-1 = FontAwesome5Free:style=Solid:size=12;2
 font-2 = FontAwesome5Brands:style=Regular:size=12;2
 
 modules-left = i3
-modules-center = cpu memory filesystem battery wlan eth uptime
+modules-center = cpu memory filesystem battery battery2 wlan eth uptime
 modules-right = pulseaudio date
 
 tray-position = ${env:TRAY_POS:right}
@@ -206,7 +206,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp5s0
+interface = wlp3s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
@@ -288,7 +288,7 @@ ramp-volume-2 = 
 
 [module/battery]
 type = internal/battery
-battery = BAT0
+battery = BAT1
 adapter = ADP1
 full-at = 98
 
@@ -318,6 +318,10 @@ animation-discharging-1 = 
 animation-discharging-2 = 
 animation-discharging-foreground = ${colors.foreground-alt}
 animation-discharging-framerate = 750
+
+[module/battery2]
+inherit = module/battery
+battery = BAT2
 
 [module/temperature]
 type = internal/temperature
