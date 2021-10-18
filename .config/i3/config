@@ -288,7 +288,7 @@ bindsym $mod+Shift+x exec $HOME/.config/i3/swap_workspaces.py
 
 # Autostart applications
 exec --no-startup-id $HOME/.cargo/bin/flowy -d $HOME/.config/flowy/lake/
-exec --no-startup-id picom -b --experimental-backends
+exec --no-startup-id picom -b
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
