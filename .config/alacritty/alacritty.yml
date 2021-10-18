@@ -1,0 +1,25 @@
+window:
+  padding:
+    x: 10
+    y: 10
+
+colors:
+  primary:
+    background: '#222D31'
+
+font:
+  size: 14
+  normal:
+    family: inconsolata
+    style: Regular
+  bold:
+    family: inconsolata
+    style: Bold
+  italic:
+    family: inconsolata
+    style: Italic
+  bold_italic:
+    family: inconsolata
+    style: BoldItalic
+
+
