@@ -1,6 +1,7 @@
 #
 # ~/.bashrc
 #
+source .bash_aliases
 
 set -o vi
 
@@ -92,25 +93,6 @@ fi
 
 unset use_color safe_term match_lhs sh
 
-alias cp="cp -i"                          # confirm before overwriting something
-alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
-alias np='nano -w PKGBUILD'
-alias more=less
-alias ..="cd .."
-alias open="xdg-open"
-alias o=open
-alias c=clear
-alias cls=clear
-
-alias weather="curl wttr.in/koblenz"
-alias wtr=weather
-
-alias octave="octave-cli -q"
-
-alias dup="urxvt &\n"
-alias feierabend="blurlock && onedrive --synchronize && shutdown now"
-
 xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
@@ -164,6 +146,6 @@ git_branch() {
 # git branch name
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\] \[\033[33;1m\]\w\[\033[m\] \$(git_branch) \n\$ "
 
-export EDITOR=vim
-export VISUAL=vim
+export EDITOR=nvim
+export VISUAL=nvim
 
