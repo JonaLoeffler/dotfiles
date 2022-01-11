@@ -30,39 +30,28 @@ set undofile
 " line length indicator
 set signcolumn=yes
 set colorcolumn=120
+set textwidth=80
 
 set scrolloff=8
 set completeopt=menuone,noinsert,noselect
 " set noshowmode
 
-" Plugins
-call plug#begin('~/.config/nvim/plugged')
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'morhetz/gruvbox'
-Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'mbbill/undotree'
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-Plug 'nvim-lualine/lualine.nvim'
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'preservim/nerdtree'
-call plug#end()
-
-colorscheme gruvbox
+set wildmenu
+set wildignore=*/node_modules/*,*/.git/*,*/vendor/*
+set path+=**
 
 let mapleader = " "
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-let g:netrw_browse_split=2
-let g:netrw_banner=0
-let g:netrw_winsize=25
-let NERDTreeShowHidden=1
+source ~/.config/nvim/plugins.vim
+source ~/.config/nvim/commands.vim
+source ~/.config/nvim/lsp-config.vim
+luafile ~/.config/nvim/compe-config.lua
 
+" Theme
+colorscheme dracula
 lua << END
 require'lualine'.setup{
     options = {
-        theme = 'gruvbox'
+        theme = 'dracula'
     }
 }
 END
@@ -73,20 +62,11 @@ nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <leader>co :copen<CR>
+nnoremap <leader>cc :cclose<CR>
+nnoremap <C-j> :cnext<CR>
+nnoremap <C-k> :cprev<CR>
 
-" Autocommands
-fun! TrimWhitespace()
-    let l:save = winsaveview()
-    keeppatterns %s/\s\+$//e
-    call winrestview(l:save)
-endfun
-
-augroup THE_PRIMEAGEN
-    autocmd!
-    autocmd BufWritePre * :call TrimWhitespace()
-augroup end
+" format paragraphs (comments)
+nnoremap <leader>f gqip
 
