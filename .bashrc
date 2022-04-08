@@ -148,4 +148,5 @@ export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\] \[\033[33;1m\]\w\[\033[m\] \$(
 
 export EDITOR=nvim
 export VISUAL=nvim
+export PATH=$PATH:$HOME/.config/projects
 
